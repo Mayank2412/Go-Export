@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeaturesActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        app:cardBackgroundColor="@android:color/background_dark"
+        app:cardCornerRadius="20dp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20sp">
+
+
+                <ImageView
+                    android:id="@+id/imageViewNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/ic_symbol_new_foreground" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="About the features"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="1. Locate: It directly takes you to Google Maps, with your input address as the destination.\n\n
+2. Call: Starts a call to the primary number.\n\n
+3. Record: Opens a basic Voice Recorder, that records and stores one audio file at a time.\n\n
+4. Send a text: Sends a standard SMS Message to all provided contacts, with a URL to your current location and your battery percentage.\n\n
+5. Lock Device: Locks the Screen so that the device can only be opened non-biometrically.\n\n
+6. Way Finder: An almost completely offline utility with directions to your destination, and a magnetic compass.\n\n
+7. Help Line: A list of some important helpline numbers you can call instantly.\n\n
+8. The 'GO' Button: Helps you lock your screen, send a message and make a call with just one tap."
+                    android:textAlignment="textStart"
+                    android:textColor="@color/teal_700"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/closebtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:fontFamily="@font/montserrat"
+                    android:text="OKAY, I Got it."
+                    app:cornerRadius="20sp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

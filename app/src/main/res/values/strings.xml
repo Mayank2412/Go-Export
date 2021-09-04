@@ -1,0 +1,61 @@
+<resources>
+
+
+    <string name="latitudeBabel">Latitude</string>
+    <string name="longitudeBabel">Longitude</string>
+
+    <string name="app_name">Go</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="admindesc">Allows the app to lock your device on being manually triggered.</string>
+    <string name="adminlabel">Screen Lock</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+
+    <string name="toggle_flash">Toggle Flash</string>
+
+    <string name="scanned_data">Scanned Data</string>
+    <string name="audio_recorder">Audio Recorder</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="stop_recording">Stop Recording</string>
+    <string name="play_recording">Play Recording</string>
+    <string name="stop_playing">Stop Playing</string>
+    <string name="status">Status</string>
+
+    <string name="tutorial_text">
+
+    </string>
+
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_location">Map</string>
+    <string name="title_activity_info">ScrollingActivity</string>
+    <string name="large_text">
+        "Go is a personal attempt to develop a women safety app, that unlike its predecessors, offers a wide range of basic but vital functions for any user.
+
+The features were developed while keeping in mind that the user might not have top-tier connectivity at all times, and thus can't depend on the Internet for everything.
+
+"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_manual">ManualActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_settings_new">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="aboutpref">about</string>
+    <string name="title_activity_tutorial">TutorialActivity</string>
+    <string name="title_activity_directory">DirectoryActivity</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+</resources>

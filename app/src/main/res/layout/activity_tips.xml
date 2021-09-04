@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".TipsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.Go.AppBarOverlay">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/backbutton7"
+                android:layout_width="63sp"
+                android:layout_height="73dp"
+                android:background="#00000000"
+                android:fontFamily="@font/montserrat"
+                android:textSize="0sp"
+                app:backgroundTint="#00000000"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/ic_back_arrow"
+                app:iconSize="33dp"
+                app:layout_column="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_gravity="left|center_vertical"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/header2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:fontFamily="@font/montserrat"
+                android:text="Quick Tips"
+                android:textColor="@color/primarytext"
+                android:textSize="40sp"
+                app:layout_gravity="left|center_vertical" />
+        </androidx.gridlayout.widget.GridLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/scroll_tips" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

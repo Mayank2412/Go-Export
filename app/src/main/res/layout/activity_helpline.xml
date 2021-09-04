@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelplineActivity">
+
+    <Button
+        android:id="@+id/backbutton5"
+        android:layout_width="63sp"
+        android:layout_height="73dp"
+        android:background="#00000000"
+        android:fontFamily="@font/montserrat"
+        android:textSize="0sp"
+        app:backgroundTint="#00000000"
+        app:cornerRadius="60dp"
+        app:icon="@drawable/ic_back_arrow"
+        app:iconSize="33dp"
+        app:iconTint="@color/teal_700"
+        app:layout_column="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_gravity="top|left"
+        app:layout_row="0" />
+
+    <TextView
+        android:id="@+id/emerheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:text="Emergency Contacts"
+        android:textColor="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/emerins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:text="(Tap on a number to call it instantly)"
+        android:textColor="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emerheader" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emerins">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emerins">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/nen"
+                        android:layout_width="198dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:padding="10sp"
+                        android:text="Emergency Number"
+                        android:textAlignment="center"
+                        tools:layout_editor_absoluteX="73dp"
+                        tools:layout_editor_absoluteY="95dp" />
+
+                    <Button
+                        android:id="@+id/nennum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/teal_700"
+                        android:fontFamily="@font/montserrat"
+                        android:text="112"
+                        app:cornerRadius="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/police"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:padding="10sp"
+                        android:text="Police"
+                        android:textAlignment="center"
+                        tools:layout_editor_absoluteX="73dp"
+                        tools:layout_editor_absoluteY="95dp" />
+
+                    <Button
+                        android:id="@+id/policenum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/teal_700"
+                        android:fontFamily="@font/montserrat"
+                        android:text="100"
+                        app:cornerRadius="20sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/fire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:padding="10sp"
+                        android:text="Fire"
+                        android:textAlignment="center"
+                        tools:layout_editor_absoluteX="73dp"
+                        tools:layout_editor_absoluteY="95dp" />
+
+                    <Button
+                        android:id="@+id/firenum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/teal_700"
+                        android:fontFamily="@font/montserrat"
+                        android:text="101"
+                        app:cornerRadius="20sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/amb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:padding="10sp"
+                        android:text="Ambulance"
+                        android:textAlignment="center"
+                        tools:layout_editor_absoluteX="73dp"
+                        tools:layout_editor_absoluteY="95dp" />
+
+                    <Button
+                        android:id="@+id/ambnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/teal_700"
+                        android:fontFamily="@font/montserrat"
+                        android:text="102"
+                        app:cornerRadius="20sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/wh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:padding="10sp"
+                        android:text="Women Helpline Number"
+                        android:textAlignment="center"
+                        tools:layout_editor_absoluteX="73dp"
+                        tools:layout_editor_absoluteY="95dp" />
+
+                    <Button
+                        android:id="@+id/whnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/teal_700"
+                        android:fontFamily="@font/montserrat"
+                        android:text="1091"
+                        app:cornerRadius="20sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/whd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:padding="10sp"
+                        android:text="Domestic Helpline"
+                        android:textAlignment="center"
+                        tools:layout_editor_absoluteX="73dp"
+                        tools:layout_editor_absoluteY="95dp" />
+
+                    <Button
+                        android:id="@+id/whdnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/teal_700"
+                        android:fontFamily="@font/montserrat"
+                        android:text="181"
+                        app:cornerRadius="20sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/mwc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:padding="10sp"
+                        android:text="Missing Women and Child"
+                        android:textAlignment="center"
+                        tools:layout_editor_absoluteX="73dp"
+                        tools:layout_editor_absoluteY="95dp" />
+
+                    <Button
+                        android:id="@+id/mwcnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/teal_700"
+                        android:fontFamily="@font/montserrat"
+                        android:text="1094"
+                        app:cornerRadius="20sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/cds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:padding="10sp"
+                        android:text="Children Helpline"
+                        android:textAlignment="center"
+                        tools:layout_editor_absoluteX="73dp"
+                        tools:layout_editor_absoluteY="95dp" />
+
+                    <Button
+                        android:id="@+id/cdsnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/teal_700"
+                        android:fontFamily="@font/montserrat"
+                        android:text="1098"
+                        app:cornerRadius="20sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/mh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:padding="10sp"
+                        android:text="Mental Health Helpline"
+                        android:textAlignment="center"
+                        tools:layout_editor_absoluteX="73dp"
+                        tools:layout_editor_absoluteY="95dp" />
+
+                    <Button
+                        android:id="@+id/mhnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat"
+                        android:text="CALL"
+                        app:cornerRadius="20sp"
+                        android:backgroundTint="@color/teal_700" />
+
+                </TableRow>
+
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

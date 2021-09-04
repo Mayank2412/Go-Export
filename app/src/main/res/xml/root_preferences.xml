@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:foregroundTint="@color/teal_700"
+        app:title="Basic Information">
+        <EditTextPreference
+            app:dialogTitle="Set Address"
+            app:key="address"
+            app:summary="Set your destination locality to be used while quickly opening Google Maps."
+            app:title="Address"
+            app:useSimpleSummaryProvider="true" />
+        <Preference
+            app:key="directorylink"
+            app:summary="Adjust your contacts to be used."
+            app:title="Telephone Directory">
+            <intent
+                android:targetClass="com.macapps.go.DirectoryActivity"
+                android:targetPackage="com.macapps.go" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="On pressing 'GO'">
+        <SwitchPreferenceCompat
+            app:key="phonelock"
+            app:summaryOff="Set a Device Lock that can only be unlocked by manually entering your password/PIN."
+            app:title="Non-Biometric Device Lock" />
+
+        <SwitchPreferenceCompat
+            app:key="sendlocation"
+            app:summaryOff="Send your location as an SMS message to selected contacts."
+            app:title="Send Location" />
+
+        <SwitchPreferenceCompat
+            app:key="autodial"
+            app:summaryOff="Auto-dial selected contact until one of them picks up."
+            app:title="AutoDial Contacts" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Permissions">
+        <Preference
+            app:key="permissionlink"
+            app:title="Grant Permissions">
+            <intent
+                android:targetClass="com.macapps.go.PermissionsActivity"
+                android:targetPackage="com.macapps.go" />
+        </Preference>
+        <Preference
+            app:key="adminlink"
+            app:title="Enable/Disable Device Admin">
+            <intent
+                android:targetClass="com.macapps.go.RemoveAdmin"
+                android:targetPackage="com.macapps.go" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Other Information">
+        <Preference
+            app:key="tutoriallink"
+            app:title="Take the Tutorial!">
+            <intent
+                android:targetClass="com.macapps.go.TutorialActivity"
+                android:targetPackage="com.macapps.go" />
+        </Preference>
+        <Preference
+            android:id="@+id/featureslink"
+            app:key="featureslink"
+            app:title="About the Features">
+           <intent
+                android:targetClass="com.macapps.go.FeaturesActivity"
+                android:targetPackage="com.macapps.go" />
+        </Preference>
+        <Preference
+            app:key="aboutlink"
+            app:title="About GO">
+            <intent
+                android:targetClass="com.macapps.go.InfoActivity"
+                android:targetPackage="com.macapps.go" />
+        </Preference>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

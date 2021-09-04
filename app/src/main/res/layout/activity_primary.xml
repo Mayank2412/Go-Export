@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+
+    <Button
+        android:id="@+id/backbutton9"
+        android:layout_width="63sp"
+        android:layout_height="73dp"
+        android:background="#00000000"
+        android:fontFamily="@font/montserrat"
+        android:textSize="0sp"
+        app:backgroundTint="#00000000"
+        app:cornerRadius="60dp"
+        app:icon="@drawable/ic_exit"
+        app:iconSize="33dp"
+        app:iconTint="@color/teal_700"
+        app:layout_column="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_gravity="top|left"
+        app:layout_row="0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/settingsbutton"
+            android:layout_width="63dp"
+            android:layout_height="73dp"
+            android:layout_margin="4sp"
+            android:background="#00000000"
+            android:fontFamily="@font/montserrat"
+            android:textSize="0sp"
+            app:backgroundTint="#00000000"
+            app:cornerRadius="60dp"
+            app:icon="@drawable/settings"
+            app:iconSize="33dp"
+            app:iconTint="@color/teal_700"
+            app:layout_column="0"
+            app:layout_gravity="top"
+            app:layout_row="0"
+            app:rippleColor="@color/teal_700" />
+
+        <Button
+            android:id="@+id/primarybutton"
+            android:layout_width="229dp"
+            android:layout_height="236dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/montserrat"
+            android:text="GO"
+            android:textSize="60sp"
+            app:backgroundTint="@color/teal_700"
+            app:cornerRadius="350dp" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4sp"
+            android:layout_marginTop="36dp"
+            android:foregroundGravity="fill_horizontal|center">
+
+            <TextView
+                android:id="@+id/locktext"
+                android:layout_width="62dp"
+                android:layout_height="39dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="Lock Device"
+                app:layout_column="1"
+                app:layout_gravity="top"
+                app:layout_row="2" />
+
+            <TextView
+                android:id="@+id/emergencytext"
+                android:layout_width="63dp"
+                android:layout_height="39dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="Help Line"
+                app:layout_column="4"
+                app:layout_gravity="top"
+                app:layout_row="2" />
+
+            <TextView
+                android:id="@+id/smstext"
+                android:layout_width="63dp"
+                android:layout_height="36dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="Send a Text"
+                app:layout_column="0"
+                app:layout_gravity="bottom"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/smsbutton"
+                android:layout_width="63dp"
+                android:layout_height="73dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="60sp"
+                app:backgroundTint="@color/teal_700"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/message"
+                app:iconSize="33dp"
+                app:layout_column="0"
+                app:layout_gravity="top"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/phonelockbutton"
+                android:layout_width="63dp"
+                android:layout_height="73dp"
+                android:layout_margin="4sp"
+                android:layout_marginTop="40sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="60sp"
+                app:backgroundTint="@color/teal_700"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/phonelink_lock"
+                app:iconGravity="start|textStart"
+                app:iconPadding="0dp"
+                app:iconSize="33dp"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/helpbutton"
+                android:layout_width="63dp"
+                android:layout_height="73dp"
+                android:layout_margin="4sp"
+                android:layout_marginTop="40sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="60sp"
+                app:backgroundTint="@color/teal_700"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/helpline"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="35dp"
+                app:layout_column="4"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/toolsbutton"
+                android:layout_width="63dp"
+                android:layout_height="73dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                app:backgroundTint="@color/teal_700"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/ic_tools"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="33dp"
+                app:layout_column="5"
+                app:layout_gravity="top"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/toolstext"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="All Tools"
+                app:layout_column="5"
+                app:layout_gravity="bottom"
+                app:layout_row="0" />
+
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                app:layout_column="2"
+                app:layout_row="0" />
+
+        </androidx.gridlayout.widget.GridLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    tools:context=".ToolsActivity">
+
+
+    <Button
+        android:id="@+id/backbutton2"
+        android:layout_width="63sp"
+        android:layout_height="73dp"
+        android:background="#00000000"
+        android:fontFamily="@font/montserrat"
+        android:textSize="0sp"
+        app:backgroundTint="#00000000"
+        app:cornerRadius="60dp"
+        app:icon="@drawable/ic_back_arrow"
+        app:iconSize="33dp"
+        app:iconTint="@color/teal_700"
+        app:layout_column="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_gravity="top|left"
+        app:layout_row="0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/settingsbutton"
+            android:layout_width="63dp"
+            android:layout_height="73dp"
+            android:layout_margin="4sp"
+            android:background="#00000000"
+            android:fontFamily="@font/montserrat"
+            android:textSize="0sp"
+            app:backgroundTint="#00000000"
+            app:cornerRadius="60dp"
+            app:icon="@drawable/settings"
+            app:iconSize="33dp"
+            app:iconTint="@color/teal_700"
+            app:layout_column="0"
+            app:layout_gravity="top"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:padding="15sp"
+            android:paddingStart="30sp"
+            android:text="All Tools"
+            android:textColor="@color/teal_700"
+            android:textSize="44sp" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="463dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_margin="4sp"
+            android:layout_marginTop="36dp"
+            android:foregroundGravity="fill_horizontal|center">
+
+            <Button
+                android:id="@+id/toolslocationbutton"
+                android:layout_width="63dp"
+                android:layout_height="73dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="60sp"
+                app:backgroundTint="@color/teal_700"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/target"
+                app:iconSize="33dp"
+                app:layout_column="0"
+                app:layout_gravity="top"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/toolslocate"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="Open Google Maps"
+                app:layout_column="0"
+                app:layout_gravity="top"
+                app:layout_row="2" />
+
+            <Button
+                android:id="@+id/toolscallbutton"
+                android:layout_width="63dp"
+                android:layout_height="73dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="top"
+                android:textSize="60sp"
+                app:backgroundTint="@color/teal_700"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/call"
+                app:iconGravity="start|textStart"
+                app:iconPadding="0dp"
+                app:iconSize="33dp"
+                app:layout_column="2"
+                app:layout_gravity="top"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/toolscall"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="Call Primary No."
+                app:layout_column="2"
+                app:layout_gravity="top"
+                app:layout_row="2" />
+
+            <Button
+                android:id="@+id/toolssmsbutton"
+                android:layout_width="63dp"
+                android:layout_height="73dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="60sp"
+                app:backgroundTint="@color/teal_700"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/message"
+                app:iconGravity="start|textStart"
+                app:iconSize="33dp"
+                app:layout_column="0"
+                app:layout_gravity="top"
+                app:layout_row="4" />
+
+            <TextView
+                android:id="@+id/toolssendsms"
+                android:layout_width="63dp"
+                android:layout_height="36dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="Send a Text"
+                app:layout_column="0"
+                app:layout_gravity="top"
+                app:layout_row="5" />
+
+            <Button
+                android:id="@+id/toolstutorialbutton"
+                android:layout_width="63dp"
+                android:layout_height="73dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="60sp"
+                app:backgroundTint="@color/teal_700"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/ic_tutorial"
+                app:iconGravity="start"
+                app:iconSize="33dp"
+                app:layout_column="6"
+                app:layout_gravity="top"
+                app:layout_row="6" />
+
+            <Button
+                android:id="@+id/toolswayfinderbutton"
+                android:layout_width="63dp"
+                android:layout_height="73dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="60sp"
+                app:backgroundTint="@color/teal_700"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/compass"
+                app:iconGravity="start"
+                app:iconSize="32dp"
+                app:layout_column="6"
+                app:layout_gravity="top"
+                app:layout_row="4" />
+
+            <TextView
+                android:id="@+id/toolstutorial"
+                android:layout_width="63dp"
+                android:layout_height="36dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="Tutorial"
+                app:layout_column="6"
+                app:layout_gravity="top"
+                app:layout_row="7" />
+
+            <TextView
+                android:id="@+id/toolswayfinder"
+                android:layout_width="63dp"
+                android:layout_height="36dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="Way Finder"
+                app:layout_column="6"
+                app:layout_gravity="top"
+                app:layout_row="5" />
+
+            <Button
+                android:id="@+id/toolsflashbutton"
+                android:layout_width="63dp"
+                android:layout_height="73dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="60sp"
+                app:backgroundTint="@color/teal_700"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/ic_flash"
+                app:iconGravity="start|textStart"
+                app:iconSize="33dp"
+                app:layout_column="2"
+                app:layout_gravity="top"
+                app:layout_row="4" />
+
+            <TextView
+                android:id="@+id/toolsflash"
+                android:layout_width="63dp"
+                android:layout_height="36dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="Blink Flash"
+                app:layout_column="2"
+                app:layout_gravity="top"
+                app:layout_row="5" />
+
+            <Button
+                android:id="@+id/toolsphonelockbutton"
+                android:layout_width="63dp"
+                android:layout_height="73dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="60sp"
+                app:backgroundTint="@color/teal_700"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/phonelink_lock"
+                app:iconGravity="start|textStart"
+                app:iconPadding="0dp"
+                app:iconSize="33dp"
+                app:layout_column="2"
+                app:layout_gravity="top"
+                app:layout_row="6" />
+
+            <TextView
+                android:id="@+id/toolslock"
+                android:layout_width="62dp"
+                android:layout_height="39dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="Lock Device"
+                app:layout_column="2"
+                app:layout_gravity="top"
+                app:layout_row="7" />
+
+            <Button
+                android:id="@+id/toolsvoicerecbutton"
+                android:layout_width="63dp"
+                android:layout_height="73dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="60sp"
+                app:backgroundTint="@color/teal_700"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/record"
+                app:iconGravity="start|textStart"
+                app:iconSize="35dp"
+                app:layout_column="4"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/toolsrecord"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="Record/ Play Audio"
+                app:layout_column="4"
+                app:layout_gravity="top"
+                app:layout_row="2" />
+
+            <Button
+                android:id="@+id/toolsencryptbutton"
+                android:layout_width="63dp"
+                android:layout_height="73dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                app:backgroundTint="@color/teal_700"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/ic_add"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="40dp"
+                app:layout_column="6"
+                app:layout_gravity="top"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/toolsencrypt"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="Secure Data"
+                app:layout_column="6"
+                app:layout_gravity="top"
+                app:layout_row="2" />
+
+            <Button
+                android:id="@+id/toolsalertbutton"
+                android:layout_width="63dp"
+                android:layout_height="73dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="60sp"
+                app:backgroundTint="@color/teal_700"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/ic_alert"
+                app:iconGravity="start"
+                app:iconPadding="0dp"
+                app:iconSize="33dp"
+                app:layout_column="4"
+                app:layout_gravity="bottom"
+                app:layout_row="4" />
+
+            <TextView
+                android:id="@+id/toolsalert"
+                android:layout_width="63dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="Alert Sound"
+                app:layout_column="4"
+                app:layout_gravity="top"
+                app:layout_row="5" />
+
+            <Button
+                android:id="@+id/toolstipsbutton"
+                android:layout_width="63dp"
+                android:layout_height="73dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="60sp"
+                app:backgroundTint="@color/teal_700"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/ic_book"
+                app:iconGravity="start"
+                app:iconPadding="0dp"
+                app:iconSize="35dp"
+                app:layout_column="4"
+                app:layout_gravity="bottom"
+                app:layout_row="6" />
+
+            <TextView
+                android:id="@+id/toolstips"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="Quick Tips"
+                app:layout_column="4"
+                app:layout_gravity="top"
+                app:layout_row="7" />
+
+            <Button
+                android:id="@+id/toolshelplinebutton"
+                android:layout_width="63dp"
+                android:layout_height="73dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                app:backgroundTint="@color/teal_700"
+                app:cornerRadius="60dp"
+                app:icon="@drawable/helpline"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="35dp"
+                app:layout_column="0"
+                app:layout_gravity="top"
+                app:layout_row="6" />
+
+            <TextView
+                android:id="@+id/toolsemergency"
+                android:layout_width="63dp"
+                android:layout_height="39dp"
+                android:layout_margin="4sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="Help Line"
+                app:layout_column="0"
+                app:layout_gravity="top"
+                app:layout_row="7" />
+
+            <Space
+                android:layout_width="8sp"
+                android:layout_height="wrap_content"
+                app:layout_column="3"
+                app:layout_row="0" />
+
+            <Space
+                android:layout_width="8sp"
+                android:layout_height="wrap_content"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <Space
+                android:layout_width="8sp"
+                android:layout_height="wrap_content"
+                app:layout_column="5"
+                app:layout_row="0" />
+
+        </androidx.gridlayout.widget.GridLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

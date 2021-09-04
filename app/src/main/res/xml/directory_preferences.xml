@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Primary Contact">
+        <EditTextPreference
+            app:dialogTitle="Add a Phone Number"
+            app:key="phonenumber1"
+            app:title="Phone Number 1"
+            app:useSimpleSummaryProvider="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory app:title="More Contacts">
+        <EditTextPreference
+            app:dialogTitle="Add a Phone Number"
+            app:key="phonenumber2"
+            app:title="Phone Number 2"
+            app:useSimpleSummaryProvider="true"/>
+        <EditTextPreference
+            app:dialogTitle="Add a Phone Number"
+            app:key="phonenumber3"
+            app:title="Phone Number 3"
+            app:useSimpleSummaryProvider="true"/>
+        <EditTextPreference
+            app:dialogTitle="Add a Phone Number"
+            app:key="phonenumber4"
+            app:title="Phone Number 4"
+            app:useSimpleSummaryProvider="true"/>
+        <EditTextPreference
+            app:dialogTitle="Add a Phone Number"
+            app:key="phonenumber5"
+            app:title="Phone Number 5"
+            app:useSimpleSummaryProvider="true"/>
+        <EditTextPreference
+            app:dialogTitle="Add a Phone Number"
+            app:key="phonenumber6"
+            app:title="Phone Number 6"
+            app:useSimpleSummaryProvider="true"/>
+        <EditTextPreference
+            app:dialogTitle="Add a Phone Number"
+            app:key="phonenumber7"
+            app:title="Phone Number 7"
+            app:useSimpleSummaryProvider="true"/>
+        <EditTextPreference
+            app:dialogTitle="Add a Phone Number"
+            app:key="phonenumber8"
+            app:title="Phone Number 8"
+            app:useSimpleSummaryProvider="true"/>
+        <EditTextPreference
+            app:dialogTitle="Add a Phone Number"
+            app:key="phonenumber9"
+            app:title="Phone Number 9"
+            app:useSimpleSummaryProvider="true"/>
+        <EditTextPreference
+            app:dialogTitle="Add a Phone Number"
+            app:key="phonenumber10"
+            app:title="Phone Number 10"
+            app:useSimpleSummaryProvider="true"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

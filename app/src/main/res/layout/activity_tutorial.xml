@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutorialActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        app:cardBackgroundColor="@android:color/background_dark"
+        app:cardCornerRadius="20dp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20sp">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/ic_symbol_new_foreground" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Tutorial"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="1. After fresh installation, grant all permissions that follow, so that the application works perfectly.\n\n2. Go to Settings.\n\n3. Fill in your Address, your telephone numbers, and select the options you want to work.\n\n4. Just restart the app once. You're good to go!"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/teal_700"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Some tips to remember"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:textSize="25sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="
+-> You need to have some level of mobile and internet connectivity, even if it's poor.\n\n
+-> You need to put in the address and atleast the primary contact for the features to work.\n\n
+-> The voice recording stores only one audio file at a time. It overwrites the current one while recording another.\n\n
+-> For a better understanding of the features, refer 'About the features' in Settings."
+                    android:textAlignment="textStart"
+                    android:textColor="@color/teal_700"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/closebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30sp"
+                    android:backgroundTint="@color/teal_700"
+                    android:fontFamily="@font/montserrat"
+                    android:text="I understand"
+                    app:cornerRadius="20sp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

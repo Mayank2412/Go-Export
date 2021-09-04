@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".InfoActivity"
+    tools:showIn="@layout/activity_info">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:fontFamily="@font/montserrat"
+        android:text="
+Go is a personal attempt to develop a women safety app, that unlike its predecessors, offers a wide range of basic but vital functions for any user.\n\n
+
+Have you ever been in a situation where you wish you could quickly send an SOS call/message to the ones near and dear to you ? This app lets you do just that.\n\n
+
+Go lets you send text messages to 10 contacts, call a contact, and lock your phone, all by one tap. It also has a variety of other features that might prove to be useful in such situations.\n\n
+
+The features were developed while keeping in mind that the user might not have top-tier connectivity at all times, and thus can't depend on the Internet for everything.\n\n
+
+The project will shortly go open-source, i.e. It will be made open to developers globally, so that the willing ones can contribute to the app, thus improving it over time.\n\n
+
+For any further details, please feel free to contact me on +91 9811880809, or email me on mayankguptadlf@gmail.com.\n\n"
+        tools:ignore="HardcodedText" />
+
+</androidx.core.widget.NestedScrollView>
